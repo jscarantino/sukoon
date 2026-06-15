@@ -361,3 +361,28 @@ body {
     padding-right: 100px;
   }
 }
+
+/* Typewriter Cursor Styles */
+#greetings {
+  display: inline-block;
+  position: relative;
+}
+
+#greetings::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 0.75s infinite alternate;
+  font-weight: normal;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#greetings.done::after {
+  opacity: 0;
+}
+
+@keyframes blink {
+  0%, 40% { opacity: 1; }
+  60%, 100% { opacity: 0; }
+}
