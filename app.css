@@ -230,7 +230,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.9rem;
+  gap: 0.6rem;
   color: var(--fg);
 }
 
@@ -308,21 +308,7 @@ body {
   }
 }
 
-.weatherIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5.5vh;
-  height: 5.5vh;
-  border-radius: 50%;
-  background-color: color-mix(in srgb, var(--accent) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
-}
 
-#weatherIcon {
-  font-size: 2.8vh;
-  color: var(--accent);
-}
 
 .weatherValue p {
   font-size: 3.2vh;
