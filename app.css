@@ -168,11 +168,29 @@ body {
 }
 
 #hour,
-#separator,
 #minutes {
   font-size: var(--fg-primary);
-  font-weight: bolder;
+  font-weight: 700;
+  letter-spacing: -0.04em;
   color: var(--fg);
+}
+
+#separator {
+  font-size: var(--fg-primary);
+  font-weight: 300;
+  color: var(--fg);
+  opacity: 0.35;
+  margin: 0 0.05em;
+  animation: separator-pulse 2s infinite ease-in-out;
+}
+
+@keyframes separator-pulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.75;
+  }
 }
 
 #month,
